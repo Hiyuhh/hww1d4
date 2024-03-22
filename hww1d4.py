@@ -33,11 +33,13 @@ while loopy < 10:
 # 4. Python's Random Game Night
 inventory = ["sword", "shield", "armor", "staff", "wand", "potion", "poison"]
 npc_choice = random.choice(inventory)
-user_input = input("What item was selected? Pick sword, shield, armor, staff, wand, potion or poison:")
-if npc_choice == user_input:
-    print("Congrats you got it right!")
-else:
-    print("Oops, you are wrong!")
+while True:
+    user_input = input("What item was selected? Pick sword, shield, armor, staff, wand, potion or poison:")
+    if npc_choice == user_input:
+        print("Congrats you got it right!")
+        break
+    else:
+        print("Oops, you are wrong!")
 
 # 5. Looping Lists - The Rhythm of Repetition
 # Our playlist of genres
